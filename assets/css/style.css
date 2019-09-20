@@ -1,0 +1,95 @@
+body {
+	height: 100vh;
+	background-image: linear-gradient(180deg, #645ca7 0%, #ee7fb0 100%);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	color: #f6f2f1;
+	font-family: 'Passion One', cursive;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 65px;
+	line-height: 72px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 20px;
+}
+
+.subtitle {
+	font-family: Passion One;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 39px;
+	color: #f6f2f1;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 20px;
+}
+
+.button-primary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+
+	background: #645ca7;
+	border: 1px solid #645ca7;
+	box-sizing: border-box;
+	box-shadow: 2px 8px 4px rgba(100, 92, 167, 0.25);
+	border-radius: 50px;
+
+	width: 220px;
+	height: 57px;
+	margin: 10px;
+
+	/* Transform this into a styled component with font-size and line height props */
+	font-family: 'Passion One', cursive;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 39px;
+	color: #ffeaea;
+}
+
+.button-primary:hover {
+	cursor: pointer;
+}
+
+.button-image {
+	margin: 20px;
+}
+
+.button-image:hover {
+	cursor: pointer;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.input-text {
+	text-align: center;
+	border: none;
+	background: #ffffff;
+	box-shadow: 2px 8px 4px rgba(100, 92, 167, 0.25);
+	border-radius: 50px;
+	width: 220px;
+	height: 57px;
+
+	font-family: 'Passion One', cursive;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 28px;
+	color: rgba(0, 0, 0, 0.18);
+}
+
+.input-text::placeholder {
+	color: rgba(0, 0, 0, 0.18);
+}
+
