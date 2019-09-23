@@ -1,12 +1,39 @@
 body {
-	height: 100vh;
-	background-image: linear-gradient(180deg, #645ca7 0%, #ee7fb0 100%);
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.background-color {
+	margin: none;
+	height: 100vh;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+	background-image: linear-gradient(180deg, #645ca7 0%, #ee7fb0 100%);
+}
+
+.background-white {
+	margin: none;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 600px) {
+	.background-white {
+		margin: none;
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
 }
 
 .title {
@@ -29,6 +56,15 @@ body {
 	color: #f6f2f1;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	margin: 20px;
+}
+
+.cap-title {
+	font-family: Passion One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 28px;
+	margin: 15px;
 }
 
 .button-primary {
@@ -68,8 +104,10 @@ body {
 	cursor: pointer;
 }
 
-textarea:focus, input:focus{
-    outline: none;
+textarea:focus,
+input:focus,
+button:focus {
+	outline: none;
 }
 
 .input-text {
@@ -93,3 +131,95 @@ textarea:focus, input:focus{
 	color: rgba(0, 0, 0, 0.18);
 }
 
+.crop {
+	height: 310px;
+	overflow: hidden;
+	border-radius: 0px 0px 25px 25px;
+}
+
+.crop-tela-1 img {
+	height: 800px;
+	margin: -420px 0 0 -100px;
+	width: fit-content;
+}
+
+.crop-tela-2 img {
+	height: 800px;
+	margin: -280px 0 0 -100px;
+	width: fit-content;
+}
+
+.crop-tela-3 img {
+	height: 700px;
+	margin: -50px 0 0 -100px;
+	width: fit-content;
+}
+
+.cap-details {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+}
+
+@media (min-width: 600px) {
+	.cap-details {
+		display: flex;
+		flex-direction: column;
+		width: 58%;
+		text-align: justify;
+	}
+}
+
+.cap-description {
+	background: rgba(196, 196, 196, 0.25);
+	padding: 0px 10px;
+	max-height: 160px;
+	overflow: auto;
+}
+
+.cap-description p {
+	font-family: Marvel;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.option-button {
+	background: #645ca7;
+	border: 1px solid #645ca7;
+	box-sizing: border-box;
+	box-shadow: 2px 8px 4px rgba(100, 92, 167, 0.25);
+	border-radius: 50px;
+	width: 85px;
+	height: 38px;
+	text-decoration: none;
+	text-align: center;
+
+	font-family: Passion One;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 39px;
+	color: #ffffff;
+}
+
+.option-button:hover {
+	cursor: pointer;
+}
+
+.options {
+	justify-content: space-around;
+	display: flex;
+	padding-top: 10px;
+}
+
+.end-description {
+	font-family: Passion One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	color: #ffffff;
+}
